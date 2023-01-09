@@ -3,6 +3,9 @@ package fr.boxcheck.boxcheck;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
+import javafx.scene.input.KeyEvent;
+
+import java.lang.reflect.Field;
 
 public class CheckBoxControll {
     public javafx.scene.control.TextField TextField;
@@ -29,18 +32,44 @@ public class CheckBoxControll {
         String Text = TextField.getText();
 
         Label.setText(Text);
+
+    }
+
+    public void Test(KeyEvent keyEvent) {
+        if(TextField.getText().isEmpty()){
+            TextBox.setDisable(true);
+
+        }else{
+            TextBox.setDisable(false);
+
+        }
+
     }
 
     public void BoxCheck(ActionEvent actionEvent) {                     //Function des CheckBox
-        if(TextField.getText().equals("")){
+        CheckBox Check = (CheckBox)actionEvent.getSource();
+
+
+        if(Check.setSelected(true)){
+            Check.setSelected(true);
 
         }else{
-            
+            Check.setSelected(false);
         }
 
     }
 
     public void ActionClickFond(ActionEvent actionEvent) {              //Function pour la fieldFond
+
+        CheckBox Check = (CheckBox) actionEvent.getSource();
+
+
+        if(Check.isSelected()){
+            Check.setSelected(true);
+
+        }else{
+            Check.setSelected(false);
+        }
 
 
     }
@@ -52,6 +81,6 @@ public class CheckBoxControll {
 
     public void ActionClickCasse(ActionEvent actionEvent) {             //Function pour le fieldCasse
 
-
     }
+
 }
