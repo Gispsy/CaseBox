@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.boxcheck.boxcheck.CheckBoxControll">
+   <children>
+      <TextField fx:id="TextField" layoutX="30.0" layoutY="71.0" onAction="#TextEnter" prefHeight="25.0" prefWidth="250.0" promptText="Entrer un texte..." />
+      <TitledPane fx:id="TextBox" animated="false" collapsible="false" layoutX="326.0" layoutY="71.0" prefHeight="113.0" prefWidth="243.0" text="Choix">
+        <content>
+          <AnchorPane fx:id="Field1" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <CheckBox fx:id="CouleurF" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#BoxCheck" prefHeight="18.0" prefWidth="216.0" text="Couleur du fond" />
+                  <CheckBox fx:id="CouleurT" layoutX="14.0" layoutY="35.0" mnemonicParsing="false" onAction="#BoxCheck" prefHeight="18.0" prefWidth="214.0" text="Couleur du texte" />
+                  <CheckBox fx:id="CasseC" layoutX="14.0" layoutY="56.0" mnemonicParsing="false" onAction="#BoxCheck" prefHeight="18.0" prefWidth="213.0" text="Casse" />
+               </children>
+            </AnchorPane>
+        </content>
+      </TitledPane>
+      <TitledPane fx:id="Field2" animated="false" collapsible="false" layoutX="14.0" layoutY="245.0" prefHeight="141.0" prefWidth="185.0" text="Fond">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <RadioButton fx:id="BtnRF" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#ActionClickFond" prefHeight="18.0" prefWidth="156.0" text="Rouge">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="Fond" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="BtnVF" layoutX="14.0" layoutY="49.0" mnemonicParsing="false" onAction="#ActionClickFond" prefHeight="18.0" prefWidth="156.0" text="Vert" toggleGroup="$Fond" />
+                  <RadioButton fx:id="BtnBF" layoutX="14.0" layoutY="84.0" mnemonicParsing="false" onAction="#ActionClickFond" prefHeight="18.0" prefWidth="156.0" text="Bleu" toggleGroup="$Fond" />
+               </children>
+            </AnchorPane>
+        </content>
+      </TitledPane>
+      <TitledPane fx:id="Field3" animated="false" collapsible="false" layoutX="208.0" layoutY="245.0" prefHeight="141.0" prefWidth="185.0" text="Texte">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <RadioButton fx:id="BtnRT" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#ActionClickTexte" prefHeight="18.0" prefWidth="156.0" text="Rouge">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="Texte" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="BtnBT" layoutX="14.0" layoutY="49.0" mnemonicParsing="false" onAction="#ActionClickTexte" prefHeight="18.0" prefWidth="156.0" text="Blanc" toggleGroup="$Texte" />
+                  <RadioButton fx:id="BtnNT" layoutX="14.0" layoutY="84.0" mnemonicParsing="false" onAction="#ActionClickTexte" prefHeight="18.0" prefWidth="156.0" text="Noir" toggleGroup="$Texte" />
+               </children>
+            </AnchorPane>
+         </content>
+      </TitledPane>
+      <TitledPane fx:id="Field4" animated="false" collapsible="false" layoutX="401.0" layoutY="245.0" prefHeight="141.0" prefWidth="185.0" text="Casse">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <RadioButton fx:id="BtnMinC" layoutX="14.0" layoutY="29.0" mnemonicParsing="false" onAction="#ActionClickCasse" prefHeight="18.0" prefWidth="156.0" text="Minuscule">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="Casse" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="BtnMajC" layoutX="14.0" layoutY="58.0" mnemonicParsing="false" onAction="#ActionClickCasse" prefHeight="18.0" prefWidth="156.0" text="Majuscule" toggleGroup="$Casse" />
+               </children>
+            </AnchorPane>
+         </content>
+      </TitledPane>
+      <Label fx:id="Label" layoutX="30.0" layoutY="138.0" prefHeight="41.0" prefWidth="250.0" />
+   </children>
+</AnchorPane>
