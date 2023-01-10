@@ -37,7 +37,7 @@
             </AnchorPane>
         </content>
       </TitledPane>
-      <TitledPane fx:id="Field3" animated="false" collapsible="false" disable="true" layoutX="208.0" layoutY="245.0" prefHeight="141.0" prefWidth="185.0" text="Texte">
+      <TitledPane fx:id="Field2" animated="false" collapsible="false" disable="true" layoutX="208.0" layoutY="245.0" prefHeight="141.0" prefWidth="185.0" text="Texte">
          <content>
             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                <children>
@@ -52,7 +52,7 @@
             </AnchorPane>
          </content>
       </TitledPane>
-      <TitledPane fx:id="Field4" animated="false" collapsible="false" disable="true" layoutX="401.0" layoutY="245.0" prefHeight="141.0" prefWidth="185.0" text="Casse">
+      <TitledPane fx:id="Field3" animated="false" collapsible="false" disable="true" layoutX="401.0" layoutY="245.0" prefHeight="141.0" prefWidth="185.0" text="Casse">
          <content>
             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                <children>

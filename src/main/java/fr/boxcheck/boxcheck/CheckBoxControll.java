@@ -25,13 +25,17 @@ public class CheckBoxControll {
     public ToggleGroup Casse;
     public RadioButton BtnMajC;
     public javafx.scene.control.Label Label;
+    public TitledPane Field1;
+    public TitledPane Field3;
+    public TitledPane Field2;
+    public RadioButton BtnNT;
 
     private String Text;
 
     public void TextEnter(ActionEvent actionEvent) {                    //Function de TexteField
-        String Text = TextField.getText();
+        String text = TextField.getText();
 
-        Label.setText(Text);
+        Label.setText(text);
 
     }
 
@@ -47,40 +51,49 @@ public class CheckBoxControll {
     }
 
     public void BoxCheck(ActionEvent actionEvent) {                     //Function des CheckBox
-        CheckBox Check = (CheckBox)actionEvent.getSource();
-
-
-        if(Check.setSelected(true)){
-            Check.setSelected(true);
-
-        }else{
-            Check.setSelected(false);
-        }
+        Field1.setDisable(!CouleurF.isSelected());
+        Field2.setDisable(!CouleurT.isSelected());
+        Field3.setDisable(!CasseC.isSelected());
 
     }
 
     public void ActionClickFond(ActionEvent actionEvent) {              //Function pour la fieldFond
+       if(BtnRF.isSelected()){
+           Label.setStyle("-fx-background-color: red");
 
-        CheckBox Check = (CheckBox) actionEvent.getSource();
+       } else if (BtnVF.isSelected()) {
+           Label.setStyle("-fx-background-color: green");
 
+       } else if (BtnBF.isSelected()) {
+           Label.setStyle("-fx-background-color: blue");
 
-        if(Check.isSelected()){
-            Check.setSelected(true);
-
-        }else{
-            Check.setSelected(false);
-        }
-
+       }
 
     }
 
     public void ActionClickTexte(ActionEvent actionEvent) {             //Function pour le fieldTexte
+        if(BtnRT.isSelected()){
+            Label.setStyle("-fx-text-fill: red");
 
+        } else if (BtnBT.isSelected()) {
+            Label.setStyle("-fx-text-fill: white");
+
+        } else if (BtnNT.isSelected()) {
+            Label.setStyle("-fx-text-fill: black");
+
+        }
 
     }
 
     public void ActionClickCasse(ActionEvent actionEvent) {             //Function pour le fieldCasse
+        String text = TextField.getText();
+        if(BtnMinC.isSelected()){
+            Label.setText(text.toLowerCase());
 
+        } else if (BtnMajC.isSelected()) {
+            Label.setText(text.toUpperCase());
+
+        }
     }
 
 }
