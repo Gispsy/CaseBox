@@ -7,7 +7,6 @@
     <list default="true" id="33fe4407-37c4-4186-b020-32e1f775cae2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/fr/boxcheck/boxcheck/CheckBoxControll.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/boxcheck/boxcheck/CheckBoxControll.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fr/boxcheck/boxcheck/CheckBox-View.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fr/boxcheck/boxcheck/CheckBox-View.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +81,8 @@
       <workItem from="1673260822945" duration="7541000" />
       <workItem from="1673274203341" duration="126000" />
       <workItem from="1673274571099" duration="3300000" />
-      <workItem from="1673335963742" duration="8823000" />
+      <workItem from="1673335963742" duration="15332000" />
+      <workItem from="1673358945266" duration="3680000" />
     </task>
     <servers />
   </component>
