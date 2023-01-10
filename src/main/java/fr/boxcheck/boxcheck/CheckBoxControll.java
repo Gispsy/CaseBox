@@ -59,11 +59,11 @@ public class CheckBoxControll {
             Field2.setDisable(CouleurT.isSelected());
             Field3.setDisable(CasseC.isSelected());
 
-        }else{
+        }else {
             TextBox.setDisable(false);
-            Field1.setDisable(!CouleurF.isSelected());
-            Field2.setDisable(!CouleurT.isSelected());
-            Field3.setDisable(!CasseC.isSelected());
+            CouleurF.setSelected(false);
+            CouleurT.setSelected(false);
+            CasseC.setSelected(false);
 
         }
 
