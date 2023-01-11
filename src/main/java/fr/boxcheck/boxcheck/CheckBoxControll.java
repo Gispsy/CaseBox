@@ -59,20 +59,22 @@ public class CheckBoxControll {
             Field2.setDisable(CouleurT.isSelected());
             Field3.setDisable(CasseC.isSelected());
 
-        }else {
+        }else{
             TextBox.setDisable(false);
             CouleurF.setSelected(false);
             CouleurT.setSelected(false);
             CasseC.setSelected(false);
-
+            Fond.selectToggle(null);
+            Casse.selectToggle(null);
+            Texte.selectToggle(null);
         }
 
     }
 
     public void BoxCheck(ActionEvent actionEvent) {                     //Function des CheckBox
-        Field1.setDisable(!CouleurF.isSelected());
-        Field2.setDisable(!CouleurT.isSelected());
-        Field3.setDisable(!CasseC.isSelected());
+       Field1.setDisable(!CouleurF.isSelected());
+       Field2.setDisable(!CouleurT.isSelected());
+       Field3.setDisable(!CasseC.isSelected());
 
     }
 

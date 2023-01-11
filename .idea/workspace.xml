@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="33fe4407-37c4-4186-b020-32e1f775cae2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/boxcheck/boxcheck/CheckBoxApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/boxcheck/boxcheck/CheckBoxApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/fr/boxcheck/boxcheck/CheckBoxControll.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/boxcheck/boxcheck/CheckBoxControll.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -82,11 +83,22 @@
       <workItem from="1673274203341" duration="126000" />
       <workItem from="1673274571099" duration="3300000" />
       <workItem from="1673335963742" duration="15332000" />
-      <workItem from="1673358945266" duration="5369000" />
+      <workItem from="1673358945266" duration="9102000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/fr/boxcheck/boxcheck/CheckBoxControll.java</url>
+          <line>119</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
